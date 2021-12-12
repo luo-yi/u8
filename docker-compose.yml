@@ -1,0 +1,10 @@
+services:
+
+  backend:
+    command: /opt/venv/bin/python app.py
+    build: 
+      context: ./backend
+    ports:
+      - "5000:5000"
+    volumes: 
+      - ./backend:/app
